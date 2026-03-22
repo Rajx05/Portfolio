@@ -58,7 +58,7 @@ const Navbar = () => {
   const contactOptions = [
     {
       name: "Email",
-      href: "mailto:your@email.com",
+      href: "mailto:rajeevnegi005@email.com",
       icon: <LuMail className="w-4 h-4" />,
     },
     {
@@ -68,7 +68,7 @@ const Navbar = () => {
     },
     {
       name: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/Rajx05",
       icon: <LuGithub className="w-4 h-4" />,
     },
   ];
