@@ -1,5 +1,6 @@
 import React from "react";
 import heroImage from "../assets/hero.png";
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 const Hero = () => (
@@ -25,6 +26,7 @@ const Hero = () => (
         applications that solve real-world problems
       </p>
       <div className="flex flex-wrap justify-center gap-4">
+        <Link to="/my-movie-taste">movies</Link>
         <motion.a
           href="#projects"
           whileHover={{ scale: 1.05 }}
