@@ -13,7 +13,7 @@ import Marquee from "@/components/8starlabs-ui/marquee";
 const Hero = () => (
   <section
     id="about"
-    className="absolute top-0 pt-32 pb-20 px-4 transition-colors duration-300"
+    className="pt-32 pb-20 px-4 transition-colors duration-300"
   >
     <div className="max-w-4xl mx-auto text-center">
       <div className="mb-8 flex justify-center">

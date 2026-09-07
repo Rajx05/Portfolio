@@ -17,14 +17,11 @@ function App() {
   return (
     <BrowserRouter>
       {/* Radiant lines background */}
-      <Navbar />
       <div ref={ref} className="relative h-svh overflow-y-auto">
         <RadiantLines containerRef={ref} className="sticky top-0 h-svh" />
-        <div className="flex flex-col items-center justify-center z-10  border-6 ">
+        <div className="absolute top-0 left-0 right-0 mt-0 z-10">
           {/* All Components */}
-          <div className="z-15 p-4 mb-80 bg-blue-400 border text-center">
-            Hello
-          </div>
+          <Navbar />
 
           {/* Home Page */}
           <Routes>
