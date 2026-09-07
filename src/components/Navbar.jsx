@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   LuSun,
   LuSunMoon,
@@ -84,8 +85,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0">
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              Rajeev Negi
+            <span className="text-xl font-bold text-black dark:text-white">
+              <a href="#about">Rajeev Negi</a>
             </span>
           </div>
 
@@ -241,7 +242,7 @@ const Navbar = () => {
                 <a
                   href="#contact"
                   onClick={() => setIsOpen(false)}
-                  className="block w-full text-center bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
+                  className="block w-full text-center bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg "
                 >
                   Hire Me
                 </a>
