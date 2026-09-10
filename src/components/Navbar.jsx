@@ -76,7 +76,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800 transition-colors duration-300"
+      className="fixed w-full bg-white/0 dark:bg-gray-400/0 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-900 transition-colors duration-300"
       animate={{
         y: hidden ? -100 : 0,
       }}
@@ -125,13 +125,13 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="absolute top-full left-0 w-48 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2"
+                    className="absolute top-full left-0 w-48 bg-white dark:bg-gray-400/0 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2"
                   >
                     {contactOptions.map((option) => (
                       <a
                         key={option.name}
                         href={option.href}
-                        className="flex items-center space-x-3 px-4 py-2.5 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                        className="flex items-center space-x-3 px-4 py-2.5 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50/0 dark:hover:bg-gray-700/0 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                       >
                         {option.icon}
                         <span>{option.name}</span>
@@ -208,7 +208,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 overflow-hidden"
+            className="md:hidden bg-white dark:bg-gray-600 border-t border-gray-100 dark:border-gray-800 overflow-hidden"
           >
             <div className="px-4 pt-2 pb-6 space-y-2">
               {navLinks.map((link) => (

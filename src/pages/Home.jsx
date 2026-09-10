@@ -1,12 +1,14 @@
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import github from "thesvg/github";
+import { Element, Link } from "react-scroll";
 
 export default function Home() {
   return (
-    <div>
+    <div id="mainPage">
       <Hero />
       <Projects />
+      <Element name="third">third</Element>
+      <Element name="second">second</Element>
     </div>
   );
 }
